@@ -1,0 +1,157 @@
+body {
+    background-color: #2d5dc8;
+    height: 90vh;
+    margin-top: 23px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.cuadro {
+    background-color: white;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 120px;
+    border-radius: 5px;
+}
+
+#title{
+    color:black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: -7%;
+}
+#gamePinText{
+    text-align: center;
+    color: black;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 60px;
+    font-family: Montserrat, "Noto Sans Arabic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight:bolder;
+}
+#players{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+    font-size: 20px;
+    resize: none;
+    border-style: none;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%; 
+    background-color: rgba(65, 164, 230, 0.6);
+}
+
+#start{
+    background-color: #2f2f2f;
+    border: none;
+    color: white;
+    padding: 15px 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+#start:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+#cancel {
+    background-color: #ce3f3f;
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 2px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease; 
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+#cancel:hover {
+    background-color: #9b2f2f;
+}
+
+
+#square {
+    position: absolute;
+    top: -80px;
+    left: -70px;
+    width: 500px;
+    height: 500px;
+    background-color: #1d3aae;
+    z-index: -1; 
+    border-radius: 20px; 
+    transform: rotate(15deg); 
+    filter: blur(3px);
+}
+
+#circle {
+    position: absolute;
+    top: 50px; 
+    right: -150px; 
+    width: 400px; 
+    height: 400px; 
+    background-color: #1d3aae; 
+    z-index: -1; 
+    border-radius: 50%; 
+    filter: blur(3px);
+}
+
+#triangle {
+    position: absolute;
+    bottom: -90px;
+    right: 30%;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 200px solid #1d3aae;
+    z-index: -1;
+    transform: rotate(30deg);
+    filter: blur(3px);
+
+}
+

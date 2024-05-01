@@ -1,0 +1,104 @@
+body {
+    background-color: #2d5dc8;
+    color: #eee;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+}
+
+#title {
+    color: #f8f9fa;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#subtitle {
+    color: #dee2e6;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#link {
+    color: #002265;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    max-width: 800px;
+}
+
+#game-list button {
+    background-color: #f8f9fa;
+    color: #212529;
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+#game-list button:hover {
+    background-color: #ced4da;
+    color: #212529;
+    border-color: #adb5bd;
+}
+
+#back {
+    color: #002265;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+#square {
+    position: absolute;
+    top: -80px;
+    left: -70px;
+    width: 500px;
+    height: 500px;
+    background-color: #1d3aae;
+    z-index: -1; 
+    border-radius: 20px; 
+    transform: rotate(15deg); 
+    filter: blur(3px);
+}
+
+#circle {
+    position: absolute;
+    top: 50px; 
+    right: -150px; 
+    width: 400px; 
+    height: 400px; 
+    background-color: #1d3aae; 
+    z-index: -1; 
+    border-radius: 50%; 
+    filter: blur(3px);
+}
+
+#triangle {
+    position: absolute;
+    bottom: -100px;
+    right: 30%;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 200px solid #1d3aae;
+    z-index: -1;
+    transform: rotate(30deg);
+    filter: blur(3px);
+
+}

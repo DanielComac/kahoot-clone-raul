@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Host | KahootClone</title>
+        <link rel = "stylesheet" href = "../css/host.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
+    </head>
+    <body>
+        <div class="cuadro">
+        <h2 id = "title">Únete a este juego usando el pin del juego:</h2>
+        <h1 id = "gamePinText"></h1>
+    </div>
+    <br><br>
+        <textarea style = "width: 700px; height: 500px;" readonly id = 'players'></textarea>
+        <button id = 'start' onclick = "startGame()">Comenzar</button>
+    
+        <br>
+
+        <button id = "cancel" onclick = "endGame()">Cancelar</button>
+
+        <div id="square"></div>
+        <div id="triangle"></div>
+        <div id="circle"></div>
+
+        <script src = "../socket.io/socket.io.js"></script>
+        <script src = "../js/libs/jqueryLibrary.js"></script>
+        <script src = "../js/libs//deparam.js"></script>
+        <script src = "../js/host.js"></script>
+    </body>
+</html>
+
